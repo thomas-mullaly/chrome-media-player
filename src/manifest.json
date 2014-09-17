@@ -1,0 +1,11 @@
+{
+    "name": "Chrome Media Player",
+    "description": "Chrome Media Player",
+    "verson": "0.0.1",
+    "manifest_version": 2,
+    "app": {
+        "background": {
+            "scripts": ["background.js"]
+        }
+    }
+}
