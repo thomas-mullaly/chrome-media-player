@@ -9,7 +9,9 @@ module.exports = function (grunt) {
                     cwd: "src/"
                 }]
             }
-        }
+        },
+
+        clean: ["build"]
     });
 
     grunt.loadNpmTasks("grunt-contrib-sass");
@@ -17,5 +19,5 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks("grunt-contrib-clean");
 
     grunt.registerTask("default", ["dev"]);
-    grunt.registerTask("dev", ["copy:dev"]);
+    grunt.registerTask("dev", ["clean", "copy:dev"]);
 };
