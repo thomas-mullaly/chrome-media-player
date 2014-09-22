@@ -2,6 +2,9 @@ require.config({
     shim: {
         "angular": {
             exports: "angular"
+        },
+        "chrome": {
+            exports: "chrome"
         }
     },
     paths: {
@@ -10,9 +13,8 @@ require.config({
     }
 });
 
-require(["angular", "domReady!"], function (angular, document) {
+require(["angular", "app", "domReady!", "app/media/bootstrap"], function (angular, app, document) {
     "use strict";
 
     angular.bootstrap(document, ["app"]);
-    console.log(angular);
-})
+});
