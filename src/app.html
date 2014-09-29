@@ -8,6 +8,11 @@
             <button ng-click="test();">Run Scan</button>
         </div>
 
-        <script src="scripts/libs/require/require.min.js" type="text/javascript" data-main="scripts/main"></script>
+        <div ng-controller="ImportController">
+            <input type="file" />
+            <button ng-click="import();">Upload</button>
+        </div>
+
+        <script src="scripts/libs/requirejs/requirejs.js" type="text/javascript" data-main="scripts/main"></script>
     </body>
 </html>

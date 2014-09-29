@@ -1,7 +1,8 @@
 define(["angular", "app/media/module"], function (angular, mediaModule) {
     "use strict";
 
-    return angular.module("app", ["app.media"]).controller('TestController', ["$scope", "app.media.scanner", function ($scope, mediaScanner) {
+    return angular.module("app", ["app.media", "app.import"])
+                  .controller('TestController', ["$scope", "app.media.scanner", function ($scope, mediaScanner) {
         $scope.test = function () {
             mediaScanner();
         };

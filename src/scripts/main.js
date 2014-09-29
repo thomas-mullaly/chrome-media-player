@@ -8,8 +8,8 @@ require.config({
         }
     },
     paths: {
-        "angular": "libs/angular/angular.min",
-        "domReady": "libs/require/require.domready"
+        "angular": "libs/angular/angular",
+        "domReady": "libs/requirejs-domready/requirejs-domReady"
     }
 });
 
