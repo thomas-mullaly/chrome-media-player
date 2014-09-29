@@ -1,4 +1,4 @@
-define(["angular", "app/media/module"], function (angular, mediaModule) {
+define(["angular"], function (angular) {
     "use strict";
 
     return angular.module("app", ["app.media", "app.import"])

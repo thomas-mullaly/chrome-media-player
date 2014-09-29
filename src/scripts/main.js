@@ -13,7 +13,7 @@ require.config({
     }
 });
 
-require(["angular", "app", "domReady!", "app/media/bootstrap"], function (angular, app, document) {
+require(["angular", "app", "domReady!", "app/bootstrap"], function (angular, app, document) {
     "use strict";
 
     angular.bootstrap(document, ["app"]);

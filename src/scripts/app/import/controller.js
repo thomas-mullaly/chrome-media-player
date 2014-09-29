@@ -1,4 +1,4 @@
-require(["app/import/module"], function (importModule) {
+define(["app/import/module"], function (importModule) {
     "use strict";
 
     return importModule.controller('ImportController', ["$scope", function ($scope) {
